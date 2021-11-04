@@ -1,0 +1,6 @@
+<h1>New Article</h1>
+
+<!--Rendering a partial here. If it's in the same folder, Rails will automatically look for it. Just gotta follow the Rails' naming structure-->
+<!--Also worth noting that the second argument is whatever you decide to pass in. Inside the partial, the [article] is a generic type-->
+<!--Here we're passing in @article into the partial to populate the form-->
+<%= render "form", article: @article %>
